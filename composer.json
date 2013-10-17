@@ -86,9 +86,9 @@
             "file": "app/config/parameters.yml"
         },
         "heroku": {
-            "compile": {
+            "compile": [
                 "php app/console assetic:dump --env=prod"
-            }
+            ]
         }
     }
 }
