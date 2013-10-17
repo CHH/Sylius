@@ -8,6 +8,7 @@ if (isset($_ENV['DATABASE_URL'])) {
     $container->setParameter('sylius.database.name', trim($parts['path'], '/'));
     $container->setParameter('sylius.database.user', $parts['user']);
     $container->setParameter('sylius.database.password', $parts['pass']);
+    $container->setParameter('sylius.database.port', $parts['port']);
 }
 
 if (isset($_ENV['SECRET'])) {
