@@ -4,17 +4,17 @@ if (isset($_ENV['DATABASE_URL'])) {
     $dbUrl = $_ENV['DATABASE_URL'];
     $parts = parse_url($dbUrl);
 
-    $container->setParameter('database_host', $parts['host']);
-    $container->setParameter('database_name', trim($parts['path'], '/'));
-    $container->setParameter('database_user', $parts['user']);
-    $container->setParameter('database_password', $parts['pass']);
+    $container->setParameter('sylius.database.host', $parts['host']);
+    $container->setParameter('sylius.database.name', trim($parts['path'], '/'));
+    $container->setParameter('sylius.database.user', $parts['user']);
+    $container->setParameter('sylius.database.password', $parts['pass']);
 }
 
 if (isset($_ENV['SECRET'])) {
-    $container->setParameter('secret', $_ENV['SECRET']);
+    $container->setParameter('sylius.secret', $_ENV['SECRET']);
 }
 
 if (isset($_ENV['MANDRILL_USERNAME'])) {
-    $container->setParameter('mailer_user', $_ENV['MANDRILL_USERNAME']);
-    $container->setParameter('mailer_password', $_ENV['MANDRILL_APIKEY']);
+    $container->setParameter('sylius.mailer.user', $_ENV['MANDRILL_USERNAME']);
+    $container->setParameter('sylius.mailer.password', $_ENV['MANDRILL_APIKEY']);
 }
