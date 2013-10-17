@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8a3260fb9c2c1cd536a58e2245376ac2",
+    "hash": "91d4322da0797222e5ca3f3cc2633014",
     "packages": [
         {
             "name": "athari/yalinqo",
@@ -2423,12 +2423,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrianmacneil/omnipay.git",
-                "reference": "4de6c429661af33ce6323d9a58f60b4e82fcf35d"
+                "reference": "77de4bcc2c0c5e2dc3c10e0817129acca3e34b1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrianmacneil/omnipay/zipball/4de6c429661af33ce6323d9a58f60b4e82fcf35d",
-                "reference": "4de6c429661af33ce6323d9a58f60b4e82fcf35d",
+                "url": "https://api.github.com/repos/adrianmacneil/omnipay/zipball/77de4bcc2c0c5e2dc3c10e0817129acca3e34b1c",
+                "reference": "77de4bcc2c0c5e2dc3c10e0817129acca3e34b1c",
                 "shasum": ""
             },
             "require": {
@@ -2463,6 +2463,10 @@
                 {
                     "name": "Adrian Macneil",
                     "email": "adrian@adrianmacneil.com"
+                },
+                {
+                    "name": "Omnipay Community",
+                    "homepage": "https://github.com/adrianmacneil/omnipay/graphs/contributors"
                 }
             ],
             "description": "A framework agnostic, multi-gateway payment processing library",
@@ -2507,7 +2511,7 @@
                 "twocheckout",
                 "worldpay"
             ],
-            "time": "2013-10-10 23:03:59"
+            "time": "2013-10-16 22:11:19"
         },
         {
             "name": "pagerfanta/pagerfanta",
@@ -3248,16 +3252,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.14.0",
+            "version": "v1.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "224fc55635d544a2ec8edb3592be18db5a093f59"
+                "reference": "8873d7593ad7c120004f177c0fd01459b383c9cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/224fc55635d544a2ec8edb3592be18db5a093f59",
-                "reference": "224fc55635d544a2ec8edb3592be18db5a093f59",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/8873d7593ad7c120004f177c0fd01459b383c9cb",
+                "reference": "8873d7593ad7c120004f177c0fd01459b383c9cb",
                 "shasum": ""
             },
             "require": {
@@ -3293,7 +3297,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-10-03 06:41:20"
+            "time": "2013-10-15 19:17:38"
         },
         {
             "name": "white-october/pagerfanta-bundle",
@@ -4036,7 +4040,8 @@
         "phpspec/phpspec": 20
     },
     "platform": {
-        "php": ">=5.3.3"
+        "php": ">=5.3.3",
+        "ext-imagick": "*"
     },
     "platform-dev": [
 
