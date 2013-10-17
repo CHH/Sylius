@@ -1,5 +1,5 @@
 parameters:
-    sylius.database.driver:   pdo_mysql
+    sylius.database.driver:   pdo_pgsql
     sylius.database.host:     127.0.0.1
     sylius.database.port:     ~
     sylius.database.name:     sylius
