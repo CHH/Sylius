@@ -4,8 +4,8 @@ Sylius Heroku Edition
 This is a Heroku enabled fork of Sylius. Please see the [blog post][]
 for more details.
 
-Deploy
-------
+Install
+-------
 
 ```sh
 $ git clone git://github.com/CHH/Sylius-Heroku
