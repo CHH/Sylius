@@ -1,3 +1,28 @@
+Sylius Heroku Edition
+=====================
+
+This is a Heroku enabled fork of Sylius. Please see the [blog post][]
+for more details.
+
+Deploy
+------
+
+```sh
+$ git clone git://github.com/CHH/Sylius-Heroku
+$ cd Sylius-Heroku
+$ heroku create --region eu --buildpack git://github.com/CHH/heroku-buildpack-php
+$ heroku labs:enable user-env-compile
+$ heroku addons:add mandrill:starter
+$ heroku addons:add heroku-postgresql:dev
+# Replace COLOR with the color in the output of the previous command
+# so it looks like e.g. HEROKU_POSTGRESQL_GRAY_URL
+$ heroku pg:promote HEROKU_POSTGRESQL_COLOR_URL
+$ git push heroku master
+$ heroku run php app/console sylius:install --env=prod
+# Rebuild Assetic assets
+$ git commit -m "Rebuild assets" --allow-empty && git push heroku master
+```
+
 Sylius [![Build status...](https://secure.travis-ci.org/Sylius/Sylius.png?branch=master)](http://travis-ci.org/Sylius/Sylius) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/Sylius/Sylius/badges/quality-score.png?s=f6d89b8aad6e15cab61134e7c0544ee1313f7f31)](https://scrutinizer-ci.com/g/Sylius/Sylius/)
 ======
 
