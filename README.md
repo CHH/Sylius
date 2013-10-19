@@ -21,6 +21,8 @@ $ git push heroku master
 $ heroku run php app/console sylius:install --env=prod
 # Rebuild Assetic assets
 $ git commit -m "Rebuild assets" --allow-empty && git push heroku master
+# View your shop in your browser!
+$ heroku open
 ```
 
 Update
