@@ -23,6 +23,18 @@ $ heroku run php app/console sylius:install --env=prod
 $ git commit -m "Rebuild assets" --allow-empty && git push heroku master
 ```
 
+Update
+------
+
+You need [Composer](http://getcomposer.org) to update.
+
+```sh
+$ git pull git://github.com/Sylius/Sylius master
+$ composer update
+$ git commit -am "Update dependencies"
+$ git push heroku master
+```
+
 Sylius [![Build status...](https://secure.travis-ci.org/Sylius/Sylius.png?branch=master)](http://travis-ci.org/Sylius/Sylius) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/Sylius/Sylius/badges/quality-score.png?s=f6d89b8aad6e15cab61134e7c0544ee1313f7f31)](https://scrutinizer-ci.com/g/Sylius/Sylius/)
 ======
 
