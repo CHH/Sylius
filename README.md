@@ -4,7 +4,7 @@ Sylius Heroku Edition
 This is a Heroku enabled fork of Sylius. Please see the [blog post][]
 for more details.
 
-[blog post]: http://christophh.net/2013/10/17/sylius-on-heroku/
+[blog post]: http://christophh.net/2013/10/19/sylius-on-heroku/
 
 Install
 -------
