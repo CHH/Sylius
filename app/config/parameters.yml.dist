@@ -7,7 +7,7 @@ parameters:
     sylius.database.password: ~
 
     sylius.mailer.transport:  smtp
-    sylius.mailer.host:       127.0.0.1
+    sylius.mailer.host:       smtp.mandrillapp.com
     sylius.mailer.user:       ~
     sylius.mailer.password:   ~
 
@@ -17,3 +17,11 @@ parameters:
     sylius.currency:          EUR
 
     sylius.cache:             file_system
+
+    paypal.express_checkout.username: EDITME
+    paypal.express_checkout.password: EDITME
+    paypal.express_checkout.signature: EDITME
+    paypal.express_checkout.sandbox: true
+
+    stripe.secret_key: EDITME
+    stripe.test_mode: true
